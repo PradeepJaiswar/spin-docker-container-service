@@ -33,7 +33,7 @@ On local make sure nginx-proxy is proxy is always running
 ## Uses
 
 * `rerun 'rackup -p 3000'` or `rerun 'rackup -p 3000'`
-* `don not run on port 80 as nginx-proxy should be running on port 80`
+* `don't run on port 80 as nginx-proxy should be running on port 80`
 
 Visit [http://localhost:3000/](http://localhost:3000/)
 
@@ -41,7 +41,7 @@ Visit [http://localhost:3000/](http://localhost:3000/)
 
 * `sudo -E rackup -p 9000`
 * `setup nginx proxy pass to port 9000`
-* `don not run on port 80 as nginx-proxy should be running on port 80`
+* `don't run on port 80 as nginx-proxy should be running on port 80`
 
 
 
