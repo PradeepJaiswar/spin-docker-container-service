@@ -41,8 +41,22 @@ Visit [http://localhost:3000/](http://localhost:3000/)
 * `setup nginx proxy pass to port 9000`
 * `don't run on port 443 as nginx-proxy should be running on port 443`
 
+## REST API
 
+For spinnig up new container
 
+```POST /containers``` with below HEADERS
+```container_image_name
+   github_repo_url 
+   mount_to_path
+   container_expose_port
+   container_startup_command
+   ```
+* container_image_name :: Docker hub image name for source code 
+* github_repo_url :: Repo url for source code
+* mount_to_path :: Path where source code should be mounted in container
+* container_expose_port :: Container port which will be mapped to subdomain
+* container_startup_command :: Command to run inside container when it's start. This can be command to start your application or application setup command
 
 
 
