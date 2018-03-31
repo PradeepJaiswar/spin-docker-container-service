@@ -68,8 +68,7 @@ Update the source code of running containers
 ```PATCH /containers``` with below HEADERS
 
 ```
-gith
-ub_repo_url
+github_repo_url
 branch_name
 ```
 * github_repo_url :: Repo url for source code
