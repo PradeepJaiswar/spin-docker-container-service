@@ -81,7 +81,7 @@ Kill containers
 ```
 github_repo_url
 ```
-* github_repo_url :: Repo url for source code
+* github_repo_url :: Repo url for source code. Because container name is MD5 of github_repo_url.
 
 Kill long running containers 
 
