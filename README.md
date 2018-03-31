@@ -64,8 +64,9 @@ For spinnig up new container
 Update the source code of running containers 
 
 ```PATCH /containers``` with below HEADERS
+
 ```github_repo_url
-   branch_name 
+   branch_name
    ```
 * github_repo_url :: Repo url for source code
 * branch_name :: Change the branch. Default is master
@@ -73,18 +74,19 @@ Update the source code of running containers
 Kill containers 
 
 ```DELETE /containers``` with below HEADERS
+
 ```github_repo_url
-   branch_name 
    ```
 * github_repo_url :: Repo url for source code
 
 Kill long running containers 
 
 ```DELETE /containers``` with below HEADERS
+
 ```container_image_name
    hours
    days
    ```
-* container_image_name :: Mame of image whos child container should be kill
+* container_image_name :: Name of image whose child container should be kill
 * hours :: Container running more than specified hours will get killed
 * days :: Container running more than specified days will get killed
