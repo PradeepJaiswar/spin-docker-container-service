@@ -95,3 +95,17 @@ Kill long running containers
 * container_image_name :: Name of image whose child container should be kill
 * hours :: Container running more than specified hours will get killed
 * days :: Container running more than specified days will get killed
+
+### Example for spinning up python notebook 
+
+```POST /containers``` with below HEADERS
+
+```
+container_image_name :: mado023/greyatom-jupyter
+github_repo_url :: https://github.com/commit-live-students/linear_regression_project
+mount_to_path :: /home/notebooks
+container_expose_port :: 8888
+container_startup_command :: /opt/conda/bin/jupyter notebook --notebook-dir=/home/notebooks --ip='*'  --port=8888 --no-browser --allow-root
+```
+
+
