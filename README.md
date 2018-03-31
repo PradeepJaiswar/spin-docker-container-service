@@ -48,12 +48,14 @@ Visit [http://localhost:3000/](http://localhost:3000/)
 For spinnig up new container
 
 ```POST /containers``` with below HEADERS
-```container_image_name
-   github_repo_url 
-   mount_to_path
-   container_expose_port
-   container_startup_command
-   ```
+
+```
+container_image_name
+github_repo_url 
+mount_to_path
+container_expose_port
+container_startup_command
+```
 * container_image_name :: Docker hub image name for source code 
 * github_repo_url :: Repo url for source code. This can be url of any hosting service for version control using git. bitbucket , gitlab etc. 
 * mount_to_path :: Path where source code should be mounted in container
@@ -65,9 +67,11 @@ Update the source code of running containers
 
 ```PATCH /containers``` with below HEADERS
 
-```github_repo_url
-   branch_name
-   ```
+```
+gith
+ub_repo_url
+branch_name
+```
 * github_repo_url :: Repo url for source code
 * branch_name :: Change the branch. Default is master
 
@@ -75,18 +79,20 @@ Kill containers
 
 ```DELETE /containers``` with below HEADERS
 
-```github_repo_url
-   ```
+```
+github_repo_url
+```
 * github_repo_url :: Repo url for source code
 
 Kill long running containers 
 
 ```DELETE /containers``` with below HEADERS
 
-```container_image_name
-   hours
-   days
-   ```
+```
+ container_image_name
+ hours
+ days
+```
 * container_image_name :: Name of image whose child container should be kill
 * hours :: Container running more than specified hours will get killed
 * days :: Container running more than specified days will get killed
