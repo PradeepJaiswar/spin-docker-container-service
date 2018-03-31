@@ -28,7 +28,7 @@ You will need the following things properly installed and runningon your compute
 You will need the following environments variables
 
 * `export SPIN_DOCKER_CONTAINER_SERVICE_DOMAIN=localhost/yourdomain.com`
-* `export SPIN_DOCKER_CONTAINER_SERVICE_ROOT_PATH=/Users/pradeepjaiswar/workspace/apps`
+* `export SPIN_DOCKER_CONTAINER_SERVICE_ROOT_PATH=/Users/pradeepjaiswar/workspace/apps` This is where all your repos wil get cloned
 
 ## Uses
 
